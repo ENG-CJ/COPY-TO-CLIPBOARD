@@ -1,0 +1,111 @@
+*{
+    margin: 0 ;
+    padding: 0;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f7;
+}
+
+/* container */
+.container{
+    width: 420px;
+    height: 530px;
+    background-color: #fafafad2;
+    padding: 25px;
+    box-shadow: 0 0 25px 5px rgba(75, 87, 75, 0.8);
+    border-radius: 10px;
+
+}
+
+.container h2{
+    padding: 25px 0;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container #text-field{
+    width: 90%;
+    height: 230px;
+    padding: 25px;
+    font-size: 19px;
+    font-weight: 600;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #1b1b1b;
+    margin-right: 20px;
+}
+
+.container #copy-btn{
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #0373e3;
+    color: #fff;
+    margin-top: 15px;
+    transform:  scale(0.9);
+    cursor: pointer;
+
+}
+
+.container #copy-btn:hover{
+    background-color: #858585;
+    color: white;
+}
+
+span.copied{
+    display: block;
+    font-size: 29px;
+    font-family: verdana;
+    color: #858585;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+    transition: all 0.5s ;
+    transform:  scale(0);
+}
+
+
+/* from jquery  */
+span.bounceIn{
+    animation: scale-effect 0.8s linear;
+}
+
+
+/* animation effect */
+@keyframes scale-effect{
+    0%{
+        opacity: 1;
+        transform: scale(0.3);
+    }
+    20%{
+     
+        transform: scale(0.8);
+    }
+    40%{
+       
+        transform: scale(0.98);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(1.04);
+    }
+    80%{
+    
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
